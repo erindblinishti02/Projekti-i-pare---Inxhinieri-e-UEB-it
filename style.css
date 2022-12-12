@@ -1,0 +1,481 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+/* header styling */
+
+header{
+    padding: 20px 8px;
+    background-color: lightgreen;
+    color: rgb(215, 215, 215);
+    margin: auto;
+
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: lightblue; */
+}
+
+.nav-logo{
+    /* background-color: lightcoral; */
+    text-transform: uppercase;
+}
+
+.nav-list{
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list a{
+    margin:0px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    color: #fff;
+    transition: .4s;
+    padding: 6px 0px;
+    border-bottom: 1px solid rgba(154, 144, 144, 0);
+
+}
+
+.nav-list a:hover{
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+}
+
+.nav-info{
+    text-transform: uppercase;
+    font-size: 14px;
+    /* background-color: lightseagreen; */
+}
+
+.nav-info h4{
+    font-weight: 100;
+    margin: 6px 6px;
+
+}
+
+.nav-info i{
+    padding: 0px 10px;
+}
+
+
+/* Hero Section styling */
+
+
+.hero{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(215, 215, 215);
+}
+
+section .hero-container{
+    margin-top: -6em;
+    padding-top: 8em;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/main.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+section .hero-container h2{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+section .hero-container h6{
+    margin: 20px 0px 60px 0px ;
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 1200px;
+    text-align: center;
+}
+
+section .hero-container button{
+    padding: 12px 22px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0.5px solid #fff;
+    color: #fff;
+    transition: .4s;
+    text-transform: uppercase;
+}
+
+section .hero-container button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* Here ends hero section */
+
+
+
+
+/* Here starts second section */
+
+
+.products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.products-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.products .title{
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 100;
+    padding-bottom: 4px ;
+}
+
+.products .title h2::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: lightseagreen;
+    bottom: 0;
+    left: 0;
+}
+
+.product{
+    width: 300px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 15px;
+}
+
+.product-image{
+    height: 350px;
+    background-image: url(images/produkt1.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+
+.product-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: fit-content;
+    padding: 20px;
+    background-color: rgb(248, 248, 248);
+    border-top: 0.5px solid black;
+}
+
+.product-content h5{
+    font-size: 18px;
+    margin: 10px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.product-content .colors button{
+    padding: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    margin: 0px 0px 30px 0px;
+}
+
+.product-content .show-button{
+    padding: 8px 16px;
+    background-color: #000;
+    border: 0.5px solid black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.product-content .add-button{
+    padding: 8px 16px;
+    background-color: #fff;
+    border: 0.5px solid black;
+    color: black;
+    text-transform: uppercase;
+    font-size: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.product-content button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.show-all button{
+    padding: 12px 24px;
+    background-color: #fff;
+    border: 0.5px solid black;
+    color: black;
+    text-transform: uppercase;
+    font-size: 10px;
+    cursor: pointer;
+    transition: .4s;
+    margin: 10px 0px;
+}
+
+.show-all button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* Here starts about section */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+}
+
+.about .title {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 100;
+    padding-bottom: 8px;
+}
+
+.about .title h2::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: lightseagreen;
+    bottom: 0;
+    left: 0;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+    /* width: 1200px; */
+}
+
+.about-image{
+    position: relative;
+}
+
+
+.about-image img{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(100%);
+    transition: .4s;
+}
+
+.about-image img:hover{
+    filter: brightness(70%);
+}
+
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 500px;
+    /* background-color: lightblue; */
+    padding: 10px 48px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+}
+
+.about-content h4{
+    font-size: 28px;
+    text-transform: uppercase;
+    margin: 0px 0px 30px 0px;
+}
+
+.about-content p{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px 0px 30px 0px;
+}
+
+.about-content button{
+    padding: 12px 24px;
+    background-color: #fff;
+    border: 0.5px solid black;
+    color: black;
+    text-transform: uppercase;
+    font-size: 10px;
+    cursor: pointer;
+    transition: .4s;
+    margin: 10px 0px;
+}
+
+.about-content button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* Here starts info section */
+
+.info-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.map{
+    width: 60%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.info .list{
+    margin: 150px 0px;
+}
+
+.info h3{
+    font-size: 32px;
+    padding: 25px 0px 0px 25px;
+    position: relative;
+}
+
+.info h3::after{
+    position: absolute;
+    width: 95%;
+    height: 2px;
+    background-color: lightseagreen;
+    bottom: -10px;
+    left: 28px;
+    content: "";
+}
+
+.info .list h5{
+    margin: 20px 0px;
+    font-size: 18px;
+    font-weight: 100;
+    padding-left: 25px;
+
+}
+
+.info .list i{
+    padding-right: 25px;
+    font-size: 24px;
+    color: lightseagreen;
+}
+
+/* here starts newsletter section */
+
+.newsletter-container{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/newsletter.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-form h3{
+    color: rgb(232, 232, 232);
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.084);
+    padding: 20px 0px;
+}
+
+.form input[type=text], .form input[type=email]{
+    width: 200px;
+    height: 35px;
+    padding: 4px 8px;
+    outline: none;
+    margin: 8px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: rgb(163, 163, 163);
+    transition: .4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+
+
+
+.form input::placeholder{
+    font-size: 12px;
+    text-transform: none;
+    color: white;
+}
+
+.form input[type=submit]{
+    width: 200px;
+    height: 35px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 12px;
+    transition: .4s;
+}
+
+.form input[type=submit]:hover{
+
+    color: black;
+    background-color: white;
+
+}
+
+

@@ -21,8 +21,23 @@ thirdColor.addEventListener("click", ()=>{
 
 // validimi i formes ne newsletter
 
-// const username = document.getElementById("name");
-// const email = document.getElementById("email").value;
-// const submit = document.getElementById("submit");
+const username = document.getElementById("name");
+const email = document.getElementById("email");
+const submit = document.getElementById("submit");
 
+
+submit.addEventListener("click", ()=>{
+
+    if(username.value.trim() == "" ){
+        username.style.borderColor = 'red';
+        username.style.transform = 'scale(1.1)';
+    }
+
+    if(!email.value.includes("@") || !email.value.includes(".com") || !email.value.includes(".net") || !email.value.includes(".org")){ 
+        email.style.borderColor = "red";
+        email.style.transform = "scale(1.1)";               
+    }
+    
+   
+})
 

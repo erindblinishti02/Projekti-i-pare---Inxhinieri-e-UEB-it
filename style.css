@@ -450,6 +450,9 @@ section .hero-container button:hover{
     transition: .4s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
+.form input[type=text]:focus, .form input[type=email]:focus{
+    text-transform: none;
+   }
 
 
 
@@ -458,6 +461,8 @@ section .hero-container button:hover{
     text-transform: none;
     color: white;
 }
+
+
 
 .form input[type=submit]{
     width: 200px;
@@ -479,3 +484,85 @@ section .hero-container button:hover{
 }
 
 
+/* Here starts footer */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    color: white;
+}
+
+.footer .logo h2{
+    font-size: 42px;
+}
+
+.footer .logo h4{
+    font-size: 14px;
+    font-weight: 100;
+
+}
+
+.footer .nav-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .nav-menu a{
+    color: white;
+    text-decoration: none;
+    margin: 10px 0px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 14px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    transition: .4s;
+}
+.footer .nav-menu a:hover{
+    border-bottom: 1px solid white;
+}
+
+.footer .social-icons{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.footer .social-icons i{
+    margin: 10px;
+    font-size: 24px;
+}
+
+.footer .social-icons h3{
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: none;
+}
+
+.footer-end{
+    color: rgb(68, 68, 68);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-end h4{
+    text-align: center;
+    padding: 30px;
+    border-top: 0.5px solid rgb(40, 40, 40);   
+    margin: auto;
+    width: 800px;
+    color: white;
+    font-weight: 100;
+}

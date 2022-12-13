@@ -1,3 +1,6 @@
+// validimi i ngjyrave ne produkt
+
+
 const firstColor = document.getElementById("firstColor");
 const secondColor = document.getElementById("secondColor");
 const thirdColor = document.getElementById("thirdColor");
@@ -14,3 +17,12 @@ secondColor.addEventListener("click", ()=>{
 thirdColor.addEventListener("click", ()=>{
     productImage.style.backgroundImage = "url('images/produkt3.jpg')";
 })
+
+
+// validimi i formes ne newsletter
+
+// const username = document.getElementById("name");
+// const email = document.getElementById("email").value;
+// const submit = document.getElementById("submit");
+
+

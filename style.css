@@ -231,7 +231,7 @@ section .hero-container button:hover{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.product-content .colors button{
+.colors button{
     padding: 14px;
     cursor: pointer;
     border: none;
@@ -529,6 +529,7 @@ section .hero-container button:hover{
     display: flex;
     flex-direction: column;
     background-color: #111;
+
 }
 .footer-content{
     display: flex;
@@ -604,4 +605,117 @@ section .hero-container button:hover{
     width: 800px;
     color: white;
     font-weight: 100;
+}
+
+/* Here starts Single Product Page stylizing */
+
+.single-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 160px;
+}
+
+.single-image{
+    background: url('images/produkt1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 600px;
+    transition: .4s;
+}
+
+/* .single-image img{
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+} */
+
+.single-content{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    width: 60%;
+}
+
+.single-content *{
+    margin: 10px;
+}
+
+.single-content h3{
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.single-content p{
+    text-transform: none;
+    font-weight: 100;
+    color: #999;
+    line-height: 20px;
+    letter-spacing: 1.2px;
+}
+
+.single-content h4{
+    font-size: 42px;
+    font-weight: 100;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.single-content .colors button{
+    border: 3px solid transparent;
+    transition: .4s;
+}
+
+.single-content .colors button:focus{
+    border: 3px solid white;
+}
+
+.single-content .single-size button{
+    margin: 0;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: white;
+    border: 0.5px solid black;
+    font-size: 11px;
+    transition: .2s;
+}
+
+.single-content .single-size button:hover{
+    color: white;
+    background-color: #000;
+}
+
+.single-content .single-size button:focus{
+    color: white;
+    background-color: #000;
+}
+
+.single-cta{
+    display: flex;
+    flex-direction: row;
+}
+
+.single-cta *{
+    margin: 0;
+}
+
+.single-cta #single-quantity{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 0;
+    border: 0.5px solid black;
+}
+
+.single-cta #single-submit{
+    background-color: black;
+    color: white;
+    padding: 8px 24px;
+    margin-left: 10px;
+    cursor: pointer;
 }

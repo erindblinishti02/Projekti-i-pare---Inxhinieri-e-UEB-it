@@ -493,7 +493,7 @@ section .hero-container button:hover{
 
 
 
-.form input[type=submit]{
+.form button{
     width: 200px;
     height: 35px;
     margin-top: 30px;
@@ -505,12 +505,22 @@ section .hero-container button:hover{
     transition: .4s;
 }
 
-.form input[type=submit]:hover{
+.form button:hover{
 
     color: black;
     background-color: white;
 
 }
+
+#error{
+    color: rgb(175, 8, 8);
+    text-transform: none;
+    padding: 8px 12px;
+    width: 200px;
+    position: relative;
+}
+
+
 
 
 /* Here starts footer */

@@ -150,10 +150,11 @@
         <div class="newsletter-container">
             <div class="newsletter-form">
                 <h3>Abonohuni per tu informuar per ofertat me te reja</h3>
-                <form action="" class="form">
-                    <input type="text" id="name" placeholder="Emri dhe Mbiemri">
-                    <input type="email" id="email" placeholder="Email Adresa">
-                    <input type="submit" id="submit" value="Abonohu">
+                <form action="/" method="GET" class="form" id="newsletterForm">
+                    <div id="error"></div>
+                    <input type="text" id="newsletterName" placeholder="Emri dhe Mbiemri" required>
+                    <input type="email" id="newsletterEmail" placeholder="Email Adresa">
+                    <button id="submit" type="newsletterSubmit">Abonohu</button>
                 </form>
             </div>
         </div>

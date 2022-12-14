@@ -21,23 +21,32 @@ thirdColor.addEventListener("click", ()=>{
 
 // validimi i formes ne newsletter
 
-const username = document.getElementById("name");
-const email = document.getElementById("email");
-const submit = document.getElementById("submit");
+const newsletterName = document.getElementById("newsletterName");
+const newsletterEmail = document.getElementById("newsletterEmail");
+const newsletterSubmit = document.getElementById("newsletterSubmit");
+const newsletterForm = document.getElementById("newsletterForm")
+const newsletterError = document.getElementById("error");
 
-
-submit.addEventListener("click", ()=>{
-
-    if(username.value.trim() == "" ){
-        username.style.borderColor = 'red';
-        username.style.transform = 'scale(1.1)';
+newsletterForm.addEventListener("submit", (e)=>{
+    let messages = [];
+    if(newsletterName.value.trim() === '' || newsletterName.value == null){
+        messages.push('Name is required');
     }
 
-    if(!email.value.includes("@") || !email.value.includes(".com") || !email.value.includes(".net") || !email.value.includes(".org")){ 
-        email.style.borderColor = "red";
-        email.style.transform = "scale(1.1)";               
+    if(!newsletterEmail.value.includes('@') || !newsletterEmail.value.endsWith('.com') || !newsletterEmail.value.endsWith('.net') || !newsletterEmail.value.endsWith('.org')){
+        messages.push("This isn't a valid email")
+    }
+
+    /// kontrollo nese ka errors, nuk lejon me bo submit 
+    if(messages.length > 0){
+        e.preventDefault();
+        newsletterError.innerText = messages.join(', ')
     }
     
-   
+
 })
 
+
+console.log(newsletterName)
+console.log(newsletterEmail)
+console.log(newsletterForm)

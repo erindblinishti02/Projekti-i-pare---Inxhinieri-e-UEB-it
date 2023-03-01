@@ -20,8 +20,8 @@
                 <div class="nav-list">
                     <a href="index.html">Home</a>
                     <a href="single-product.html">Product</a>
-                    <a href="./about.html">About</a>
-                    <a href="./contact.html">Contact</a>
+                    <a href="">About</a>
+                    <a href="">Contact</a>
                 </div>
                 <div class="nav-info">
                     <h4><i class="fa-solid fa-user"></i></i></h4>
@@ -32,33 +32,29 @@
         <!--Here ends the header-->
 
         <!--start Main section -->
-
-        <section class="info" style="margin-top: 7%;">
-            <div class="info-container">
-                <div class="map">
-                    <div style="width: 100%"><iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=Rruga%20B,%20Prishtine+(Rruga%20B,%20Prishtina)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/sport-gps/">swimming watch</a></iframe></div>
-                </div>
-                <div class="info">
-                    <h3>Contact Informations</h3>
-                    <div class="list">
-                        <h5><i class="fa-solid fa-map-pin""></i> Rruga B, Prishtine</h5>
-                        <h5><i class="fa-solid fa-phone"></i>+383 44 567 890</h5>
-                        <h5><i class="fa-solid fa-clock"></i>Monday - Sunday 08:00 - 20:00</h5>
-                        <h5><i class="fa-solid fa-envelope"></i>info@ourname.com</h5>    
-                    </div>
-               </div>
+        <section class="single-container">
+            <div class="single-image" id="product-image">
+                <!-- <img src="images/produkt1.jpg" alt=""> -->
             </div>
-        </section>
-
-        <section class="newsletter">
-            <div class="newsletter-container">
-                <div class="newsletter-form">
-                    <h3>Na kontaktoni permes email</h3>
-                    <form action="/" method="GET" class="form" id="newsletterForm">
-                        <div id="error"></div>
-                        <input type="text" id="newsletterName" placeholder="Mesazhi" required>
-                        <input type="email" id="newsletterEmail" placeholder="Email Adresa">
-                        <button id="submit" type="newsletterSubmit">Dergo</button>
+            <div class="single-content">
+                <h3 class="single-title">Xhup Me Mbushje</h3>
+                <p class="single-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, repellat amet maiores non saepe sint provident aut earum odit temporibus maxime suscipit consequatur nobis facilis, exercitationem autem molestiae architecto. Iusto.</p>
+                <h4 class="single-price">$79.99</h4>
+                <div class="single-colors colors">
+                    <button id="firstColor" style="background-color: black;"></button>
+                    <button id="secondColor" style="background-color: rgb(16, 170, 116);"></button>
+                    <button id="thirdColor" style="background-color: rgb(90, 90, 90);"></button>
+                </div>
+                <div class="single-size">
+                    <button id="size-s">S</button>
+                    <button id="size-m">M</button>
+                    <button id="size-l">L</button>
+                    <button id="size-xl">XL</button>
+                </div>
+                <div class="single-cta">
+                    <form action="/" method="GET" id="single-form">
+                        <input type="number" value="1" id="single-quantity">
+                        <button type="submit" id="single-submit">Add To Cart</button>
                     </form>
                 </div>
             </div>

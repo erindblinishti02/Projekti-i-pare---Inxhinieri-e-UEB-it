@@ -1,3 +1,8 @@
+<?php
+// here starts the header
+include "includes/header.php"
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,31 +10,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Product Template</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <script src="index.js" defer></script>
     <script src="https://kit.fontawesome.com/3f3858291e.js" defer crossorigin="anonymous"></script>
 
 </head>
 <body>
-        <!--Here starts the header-->
-        <header>
-            <div class="navbar">
-                <div class="nav-logo">
-                    <h2>Logo</h2>
-                </div>
-                <div class="nav-list">
-                    <a href="index.html">Home</a>
-                    <a href="single-product.html">Product</a>
-                    <a href="./about.html">About</a>
-                    <a href="./contact.html">Contact</a>
-                </div>
-                <div class="nav-info">
-                    <h4><i class="fa-solid fa-user"></i></i></h4>
-                    <h4><i class="fa-solid fa-cart-shopping" id="cart"></i></h4>
-                </div>
-            </div>
-        </header>
-        <!--Here ends the header-->
+        
 
         <!--start Main section -->
         <section class="about" style="margin-top: 7%;">

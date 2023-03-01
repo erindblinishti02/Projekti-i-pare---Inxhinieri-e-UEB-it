@@ -1,24 +1,3 @@
-// validimi i ngjyrave ne produkt
-
-
-const firstColor = document.getElementById("firstColor");
-const secondColor = document.getElementById("secondColor");
-const thirdColor = document.getElementById("thirdColor");
-const productImage = document.getElementById("product-image");
-
-firstColor.addEventListener("click", ()=>{
-    productImage.style.backgroundImage = "url('images/produkt1.jpg')";
-})
-
-secondColor.addEventListener("click", ()=>{
-    productImage.style.backgroundImage = "url('images/produkt2.jpg')";
-})
-
-thirdColor.addEventListener("click", ()=>{
-    productImage.style.backgroundImage = "url('images/produkt3.jpg')";
-})
-
-
 // validimi i formes ne newsletter
 
 const newsletterName = document.getElementById("newsletterName");
@@ -47,6 +26,19 @@ newsletterForm.addEventListener("submit", (e)=>{
 })
 
 
-console.log(newsletterName)
-console.log(newsletterEmail)
-console.log(newsletterForm)
+//// Slider
+
+// const slideshow = document.getElementById("hero-container");
+// const imageURLs = [
+//   'https://static.zara.net/photos///contents/mkt/spots/ss23-north-man-shoes/subhome-xmedia-08//w/3072/IMAGE-landscape-fill-79c1f378-6cf9-4158-8c27-ed9f9e3f3fc3-default_0.jpg?ts=1677244882231',
+//   'https://images.unsplash.com/photo-1504593811423-6dd665756598?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+//   'https://images.unsplash.com/photo-1544441893-675973e31985?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'
+// ];
+// let currentImageIndex = 0;
+
+// function changeBackgroundImage() {
+//   slideshow.style.backgroundImage = `url(${imageURLs[currentImageIndex]})`;
+//   currentImageIndex = (currentImageIndex + 1) % imageURLs.length;
+// }
+
+// setInterval(changeBackgroundImage, 1000);
